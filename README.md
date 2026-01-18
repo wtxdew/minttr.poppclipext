@@ -12,7 +12,7 @@ A PopClip extension for saving links and notes to Minttr.
 
 ## Installation
 
-1. Download [SaveToMinttr.popclipextz](https://github.com/wtxdew/minttr.poppclipext/releases/download/0.1/minttr.popclipextz)
+1. Download [SaveToMinttr.popclipextz](https://github.com/wtxdew/minttr.poppclipext/releases/latest)
 2. Double-click the file to install
 3. Configure your Minttr API token in PopClip settings
 
