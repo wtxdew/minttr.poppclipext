@@ -1,0 +1,35 @@
+name: Save to Minttr
+identifier: wtxdew.popclip.minttr
+icon: ./icon.png
+description: Extension for Minttr
+entitlements: [network]
+options:
+  - identifier: apiKey
+    label: API Token
+    type: string
+    description: Your Minttr API token
+  - identifier: openAfterCreate
+    label: Open Minttr after Note Created
+    type: boolean
+  - identifier: openAfterSave
+    label: Open Minttr after Link Saved
+    type: boolean
+
+capture html: true
+after: show-result
+requirements: [text]
+actions:
+  - title: Save Link
+    icon: square filled symbol:link
+    required apps: [company.thebrowser.dia]
+    applescript file: ./save-dia.applescript
+
+  - title: Save Link
+    icon: square filled symbol:link
+    excluded apps: [company.thebrowser.dia]
+    javascript file: ./save-link.ts
+
+  - title: Create Note
+    icon:  file:./icon.png
+    javascript file: ./create-note.ts
+
